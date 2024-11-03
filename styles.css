@@ -1,0 +1,360 @@
+/* style.css */
+
+
+/*sets back ground color for entire project*/
+body {
+	background-color: #E9EED9;
+}
+
+/*centers the header for both the 'questions' and 'results' page*/
+h2 {
+	text-align: center;
+}
+
+
+/*sets design elements for the opening page*/
+.start-page-header {
+	color: #54473F;
+	background-color: #CBD2A4;
+	padding: 50px;
+	border-radius: 20px;
+	margin: 100px;
+	font-size: 50px;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+}
+
+/*formats the start button on the first page*/
+.page-1-btn {
+	background-color: #9A7E6F;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 25px;
+	font-family: 'Courier New', Courier, monospace;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: background-color 0.3s;
+}
+
+/*format for all of the questions*/
+#question-section {
+	display: none;
+	font-size: 20px;
+	color: #54473F;
+	margin-left: 1in;
+}
+
+/*formats the phrase '* = required questions' on the 'questions' page*/
+p {
+	font-family: 'Courier New', Courier, monospace;
+	color: red;
+	font-size: 15px;
+}
+
+/*formats the answer boxes and drop down menus on the 'questions' page*/
+.answer-boxes {
+	font-family: 'Courier New', Courier, monospace;
+	background-color: #CBD2A4;
+	font-size: 15px;
+	padding: 3px, 2px;
+	color: black;
+	border-color: #9A7E6F;
+	border-width: 1.5px;
+	border-style: inset;
+}
+
+/*formats the submit button on the 'questions' page*/
+.submit-btn {
+	background-color: #9A7E6F;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: background-color 0.3s;
+}
+
+/*formats the button that takes you back from the 'questions' page to the start page*/
+.back-menu {
+	background-color: #9A7E6F;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: background-color 0.3s;
+}
+
+/*formates for falling book background*/
+.falling-books {
+	font-size: 50px;
+	display: inline-block;
+}
+.booksfalling {
+	animation-name: fall, shake;
+	animation-duration: 10s, 5s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 200px;
+	top: -100px;
+	animation-delay: 0.5s, 2s;
+	z-index: 7;
+}
+.booksfalling1 {
+	animation-name: fall, shake;
+	animation-duration: 10s, 5s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 500px;
+	top: -100px;
+	animation-delay: 1s, 1s;
+	z-index: 7;
+}
+.booksfalling2 {
+	animation-name: fall, shake;
+	animation-duration: 10s, 3s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 20px;
+	top: -100px;
+	animation-delay: 2s, 2s;
+	z-index: 5;
+}
+.booksfalling3 {
+	animation-name: fall, shake;
+	animation-duration: 8s, 5s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	right: 170px;
+	top: -100px;
+	animation-delay: 3s, 5s;
+	z-index: 7;
+}
+.booksfalling4 {
+	animation-name: fall, shake;
+	animation-duration: 1s, 5s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	right: 430px;
+	top: -100px;
+	animation-delay: 4s, 4s;
+	z-index: 7;
+}
+.booksfalling5 {
+	animation-name: fall, shake;
+	animation-duration: 15s, 5s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 500px;
+	top: -100px;
+	animation-delay: 6s, 2s;
+	z-index: 7;
+}
+.booksfalling6 {
+	animation-name: fall, shake;
+	animation-duration: 14s, 4s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 200px;
+	top: -100px;
+	animation-delay: 3.2s, 2s;
+	z-index: 7;
+}
+.booksfalling7 {
+	animation-name: fall, shake;
+	animation-duration: 12s, 5s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 75px;
+	top: -100px;
+	animation-delay: 7.2s, 1s;
+	z-index: 7;
+}
+.booksfalling8 {
+	animation-name: fall, shake;
+	animation-duration: 12s, 4s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 650px;
+	top: -100px;
+	animation-delay: 4s, 2s;
+	z-index: 7;
+}
+.booksfalling9 {
+	animation-name: fall, shake;
+	animation-duration: 12s, 4s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 820px;
+	top: -100px;
+	animation-delay: 5s, 2s;
+	z-index: 7;
+}
+.booksfalling10 {
+	animation-name: fall, shake;
+	animation-duration: 15s, 9s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 170px;
+	top: -100px;
+	animation-delay: 2.7s, 2s;
+	z-index: 7;
+}
+.booksfalling11 {
+	animation-name: fall, shake;
+	animation-duration: 12s, 7s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 350px;
+	top: -100px;
+	animation-delay: 0.5s, 2s;
+	z-index: 7;
+}
+.booksfalling12 {
+	animation-name: fall, shake;
+	animation-duration: 10s, 5s;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	right: 400px;
+	top: -100px;
+	animation-delay: 5s, 2s;
+	z-index: 7;
+}
+@keyframes fall {
+	0% {
+		top: -10%;
+	}
+
+	100% {
+		top: 100%;
+	}
+}
+@keyframes shake {
+	0% {
+		transform: translatex(0);
+	}
+
+	50% {
+		transform: translatex(50px);
+	}
+
+	100% {
+		transform: translatex(0);
+	}
+}
+
+/*formats the title at the top of the 'results' page*/
+#result-title {
+	display: none;
+	font-size: 20px;
+	color: #54473F;
+}
+
+/*formats error message that is displayed when there are no results*/
+#display {
+	font-size: 20px;
+	color: red;
+	text-align: center;
+}
+
+/*centers the images in the grid*/
+.more-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+/*formats the images on the 'results' page*/
+.image-container {
+	display: grid;
+	background-image: url("./book.jpg");
+	background-size: 500px 333px;
+	height: 250px;
+	width: 180px;
+	background-repeat: no-repeat;
+	align-items: center;
+	place-items: center;
+	vertical-align: middle;
+	justify-content: center; 
+	border-radius: 10px;
+}
+
+/*formats the infomration of the 'results' page*/
+.title-container {
+	padding: 1in;
+	display: grid;
+	background-color: #CBD2A4;
+	grid-template-columns: 300px 300px;
+	grid-template-rows: fit-content(100%) fit-content(100%) 1fr;
+	gap: 20px;
+	align-items: center;
+	margin: 0 auto;
+	border-bottom: 10px solid #E9EED9;
+	border-radius: 10px;
+}
+
+/*formats the title of each book that is displayed*/
+.title {
+	font-size: 20px;
+	color: #54473F;
+}
+
+/*formats the additional infomration for each book*/
+.info {
+	font-size: 15px;
+	color: #9A7E6F;
+}
+
+/*place holder image for the books*/
+.book-image {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	height: 100%;
+}
+
+/*the back button that takes you from the 'results' page to the 'questions' page*/
+.back-ques {
+	background-color: #9A7E6F;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: background-color 0.3s;
+	width: 100px;
+}
+
+/*home button on 'results' page*/
+.back-home {
+	background-color: #9A7E6F;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: background-color 0.3s;
+	width: 100px;	
+}
+
+/*loading image format*/
+.image-load {
+	place-self: center; 
+	height: 50%;
+}
+
+#buttonss {
+	display: flex;
+}

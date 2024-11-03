@@ -1,0 +1,82 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head section -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <style>
+    #welcome {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head><br>
+
+<!-- body section -->
+<body>
+  <!--Section for start block -->
+  <div id="welcome">
+    <div class="booksfalling1"><i class="falling-books">📙</i></div>
+    <div class="booksfalling2"><i class="falling-books">📘</i></div>
+    <div class="booksfalling3"><i class="falling-books">📙</i></div>
+    <div class="booksfalling5"><i class="falling-books">📕</i></div>
+    <div class="booksfalling6"><i class="falling-books">📕</i></div>
+    <div class="booksfalling7"><i class="falling-books">📘</i></div>
+    <div class="booksfalling9"><i class="falling-books">📕</i></div>
+    <div class="booksfalling10"><i class="falling-books">📙</i></div>
+    <div class="booksfalling11"><i class="falling-books">📕</i></div>
+    <div class="booksfalling12"><i class="falling-books">📘</i></div>
+    <h1 class="start-page-header" style="text-align: center;">Welcome to Book Recommendations!</h1>
+    <button class="page-1-btn" style="text-align: center;" onclick="clearCustom()">Start</button>
+  </div>
+
+  <!--Questions section to ask user -->
+  <div id="question-section">
+    <h2>Questions</h2>
+    <p>* = required questions</p>
+    <br><br>How long do you want the book to be?<span style="color:red">*</span>
+    <select class="answer-boxes" name="Length" id="Length">
+      <option value="" disabled selected>Select one</option>
+      <option value="L1">Short (1 pages to 300 pages)</option>
+      <option value="L2">Medium (301 pages to 500 pages)</option>
+      <option value="L3">Long (501 pages+)</option>
+    </select>
+    <br><br><br>What subject do you want the book to be about?<span style="color:red">*</span>
+    <input class="answer-boxes" id="book-content-input" type="text" placeholder="Content" />
+    <br><br><br>Enter an author you want to search for.
+    <input class="answer-boxes" id="book-author-input" type="text" placeholder="Author's name" />
+    <br><br><br>Enter a location you want the book to take place in.
+    <input class="answer-boxes" id="location-author-input" type="text" placeholder="Location name" />
+    <br><br><br> Select a rating (less than 2* not allowed)
+    <select class="answer-boxes" name="Rating" id="Rating">
+      <option value="" disabled selected>Select one</option>
+      <option value="R1">4.5-5  </option>
+      <option value="R2">3.5-4.5</option>
+      <option value="R3">2.5-3.5</option>
+      <option value="R4">2-2.5  </option>
+    </select>
+    <br><br><br>
+    <!-- buttons to go home and results -->
+    <button class="submit-btn" onclick="clicked()" type="button">Submit</button>
+    <button class="back-menu" onclick="backMenu()" type="button">Back</button>
+  </div>
+
+  <!-- results page -->
+  <div id="result-title">
+    <h2>Results</h2>
+    <div id="display"></div>
+    <!-- buttons to go back and home -->
+    <div id="buttonss">
+      <button class="back-ques" onclick="backQuestions()" type="button">Back</button>
+      <button class="back-home" onclick="backHome()" type="button">Home</button>
+    </div>
+  
+  </div>
+</body>
+</html>
